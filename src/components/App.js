@@ -88,7 +88,7 @@ class App extends Component {
           <div className="col-md-12 bg-white">
             <div className="container">
               <AddAppointments formDisplay={this.state.formDisplay} toggleForm={this.toggleForm} addAppointment = {this.addAppointment}/>
-              <SearchAppointments />
+              <SearchAppointments orderBy = {this.state.orderBy} orderDir={this.state.orderDir}/>
               <ListAppointments appointments={filteredApts} deleteAppointment={this.deleteAppointment} />
             </div>
           </div>
